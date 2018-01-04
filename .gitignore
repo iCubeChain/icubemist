@@ -3,3 +3,4 @@
 *.bak
 dist_mist
 dist_wallet
+node_modules
