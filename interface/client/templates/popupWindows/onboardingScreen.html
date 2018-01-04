@@ -5,7 +5,7 @@
 
         <div class="main-content">
             <div class="onboarding-section onboarding-start">
-                <p class="description">{{i18n "mist.popupWindows.onboarding.description"}}</p>
+                <p class="description mrt30">{{i18n "mist.popupWindows.onboarding.description"}}</p>
 
                 {{#if TemplateVar.get "isMainNet"}}
                 <p>
@@ -13,8 +13,9 @@
                   {{i18n "mist.popupWindows.onboarding.gotoMainnetDescription"}}
                 </p>
                 {{else}}
-                <p>
+                <p class="test-network-box">
                     <button class="start-testnet"> {{i18n "mist.popupWindows.onboarding.goToTestnet"}} </button>
+                    <br>
                     {{i18n "mist.popupWindows.onboarding.goToTestnetDescription"}}
                 </p>
                 {{/if}}
@@ -56,7 +57,7 @@
                     {{/if}}
                 </div>
 
-                <div class="col col-6 col-deposit">
+                <div class="col col-6 col-deposit newAccount-box">
                     {{#if TemplateVar.get "newAccount"}}
                         {{> dapp_identicon identity=(TemplateVar.get "newAccount")}}
                         <div class="you"> {{i18n "mist.popupWindows.onboarding.you"}}  </div>
@@ -70,13 +71,13 @@
                     {{/if}}
                 </div>
                 <div class="col col-12 footer-buttons">
-                    <button class="goto-start"> {{i18n "buttons.back"}} </button>                
+                    <button class="goto-start"> {{i18n "buttons.back"}} </button>
                     <button class="goto-tutorial-1 right-align"> {{i18n "buttons.next"}} </button>
                 </div>
             </div>
 
             <div class="onboarding-section onboarding-tutorial-1 row">
-                <h1> {{i18n "mist.popupWindows.onboarding.learnIt"}} </h1>
+                <h1 class="title-color"> {{i18n "mist.popupWindows.onboarding.learnIt"}} </h1>
                 <div class="col col-6 col-left">
                     {{{i18n "mist.popupWindows.onboarding.tutorial1Description"}}}
                     <p><a href="https://www.ethereum.org/token" class="button" target="_blank">{{i18n "mist.popupWindows.onboarding.buttons.learnReceipt"}}</a></p>
@@ -89,7 +90,7 @@
             </div>
 
             <div class="onboarding-section onboarding-tutorial-2 row">
-                <h1> {{i18n "mist.popupWindows.onboarding.learnIt"}} </h1>
+                <h1 class="title-color"> {{i18n "mist.popupWindows.onboarding.learnIt"}} </h1>
                 <div class="col col-6 col-left">
                     {{{i18n "mist.popupWindows.onboarding.tutorial2Description"}}}
                     <p><a href="https://www.ethereum.org/crowdsale" class="button" target="_blank">{{i18n "mist.popupWindows.onboarding.buttons.learnReceipt"}}</a></p>
@@ -102,7 +103,7 @@
             </div>
 
             <div class="onboarding-section onboarding-tutorial-3 row">
-                <h1> {{i18n "mist.popupWindows.onboarding.learnIt"}} </h1>
+                <h1 class="title-color"> {{i18n "mist.popupWindows.onboarding.learnIt"}} </h1>
                 <div class="col col-6 col-left">
                     {{{i18n "mist.popupWindows.onboarding.tutorial3Description"}}}
                     <p><a href="https://www.ethereum.org/dao" class="button" target="_blank">{{i18n "mist.popupWindows.onboarding.buttons.learnReceipt"}}</a></p>
@@ -135,7 +136,6 @@
                     </div>
                 {{/with}}
             {{/if}}
-
         </footer>
     </div>
 </template>
@@ -169,24 +169,36 @@
 
 
 <template name="popupWindows_onboardingScreen_password">
-    <h1> {{i18n "mist.popupWindows.onboarding.protectTitle"}} </h1>
+    <div class="popupWin-protect-box">
+    <h1 class="account-h1"> {{i18n "mist.popupWindows.onboarding.protectTitle"}} </h1>
     <form action="about:blank" target="dapp-form-helper-iframe">
-        <div class="col col-6 col-left">
+        <div class="col col-12 col-deposit protectDescription marginAuto">
             <p> {{i18n "mist.popupWindows.onboarding.protectDescription"}} </p>
         </div>
-        <div class="col col-6">
+        <div class="col col-12 col-deposit marginAuto">
+            <ul class="protect-con-list">
             {{#if TemplateVar.get "creatingPassword"}}
-                <span class="dapp-identicon dapp-icon-loading"></span>
-                <h2 style="display: block; text-align: center;">{{i18n "mist.popupWindows.onboarding.creating"}}</h2>
+                <li>
+                    <span class="dapp-identicon dapp-icon-loading"></span>
+                    <h2 style="display: block; text-align: center;">{{i18n "mist.popupWindows.onboarding.creating"}}</h2>
+                </li>
             {{else}}
-                <input type="{{passwordInputType}}" placeholder="{{i18n 'mist.popupWindows.requestAccount.enterPassword'}}" class="password {{#if TemplateVar.get 'passwordsMismatch'}}dapp-error{{/if}}">
-                <input type="{{passwordInputType}}" placeholder="{{i18n 'mist.popupWindows.requestAccount.repeatPassword'}}" class="password-repeat {{#if TemplateVar.get 'passwordsMismatch'}}dapp-error{{/if}}">
-                <br><br>
-                <input type="checkbox" name="elements_input_bool" class="show-password abi-input">
-                <label for="show-password">{{i18n "mist.popupWindows.onboarding.buttons.showPassword"}}</label>
+                <li>
+                    <label class="pwd-icon"></label>
+                    <input type="{{passwordInputType}}" placeholder="{{i18n 'mist.popupWindows.requestAccount.enterPassword'}}" class="password pwdinput {{#if TemplateVar.get 'passwordsMismatch'}}dapp-error{{/if}}">
+                </li>
+                <li>
+                    <label class="pwd-icon"></label>
+                    <input type="{{passwordInputType}}" placeholder="{{i18n 'mist.popupWindows.requestAccount.repeatPassword'}}" class="password-repeat pwdinput {{#if TemplateVar.get 'passwordsMismatch'}}dapp-error{{/if}}">
+                </li>
+                <li class="checkbox-li">
+                    <input type="checkbox" name="elements_input_bool" class="show-password abi-input">
+                    <i></i>
+                    <label for="show-password">{{i18n "mist.popupWindows.onboarding.buttons.showPassword"}}</label>
+                </li>
             {{/if}}
+            </ul>
         </div>
-
         <div class="col col-12 footer-buttons">
             <button class="goto-start" type="button">  {{i18n "buttons.back"}}  </button>
             {{#if TemplateVar.get "passwordsNotEmpty"}}
@@ -196,4 +208,5 @@
             {{/if}}
         </div>
     </form>
+    </div>
 </template>

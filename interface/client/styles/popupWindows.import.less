@@ -77,18 +77,26 @@
 
 	&.update-available {
         -webkit-user-select: all;
-
+        background-image: linear-gradient(0deg,#610c62 0%,#250629 100%),linear-gradient(#610c62,#610c62);
 		.text {
 			text-align: left;
+            color:#fff;
 		}
 		h1 {
 			font-size: 200%;
 			margin-bottom: 20px;
-
+            color: #fff;
 			&.no-update {
 				font-size: 180%;
 			}
 		}
+        footer{
+            .get-update{
+                color: #ff70af;
+                background: transparent;
+            }
+            background: transparent;
+        }
 	}
 	&.tx-info {
 
@@ -138,8 +146,7 @@
 				}
 				.unit {
 					font-size: 0.6em;
-					font-weight: 400;
-				}
+					font-weight: 400;				}
 				.execute-function {
 					display: block;
 					position: absolute;
@@ -408,12 +415,12 @@
 			padding: 12px 0 0;
 			text-align: left;
 			input[type=checkbox] {
-				margin-left: 16px;
-			}
+				margin-left: 6px;
+            }
 			label {
 				position: relative;
 				top: -7px;
-				left: 6px;
+				left: 12px;
 				opacity: 0.9;
 				font-size: 14px;
 			}
