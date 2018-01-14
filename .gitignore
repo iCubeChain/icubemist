@@ -5,4 +5,3 @@ dist_mist
 dist_wallet
 node_modules
 .yarn-integrity
-interface/node_modules/.yarn-integrity
