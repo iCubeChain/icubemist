@@ -135,11 +135,13 @@ gulp.task('build-dist', (cb) => {
                     'zip',
                     'deb',
                     'rpm'
+//                    'dir'
                 ]
             },
             win: {
                 target: [
-                    'dir'
+                   'zip'
+//                    'dir'
                 ]
             },
             mac: {
@@ -176,7 +178,7 @@ gulp.task('build-dist', (cb) => {
     if (options.linux) targets.push(builder.Platform.LINUX);
 
     builder.build({
-        targets: builder.createTargets(targets, null, 'x64'),
+        targets: builder.createTargets(targets, null, 'all'),
         projectDir: path.join(__dirname, `../dist_${type}`, 'app'),
         publish: 'never',
         config: {
@@ -229,14 +231,16 @@ gulp.task('release-dist', (done) => {
             break;
         case 'mac':
             cp(
-                path.join('mac', `${applicationName}-${version}.dmg`),
+                `${applicationName}-${version}.dmg`,
                 `${appNameHypen}-macosx-${versionDashed}.dmg`);
             break;
         case 'linux':
-//            cp(
-//                `${appNameNoSpace}_${version}_i386.deb`, `${appNameHypen}-linux32-${versionDashed}.deb`);
-//            cp(
-//                `${appNameNoSpace}-${version}-ia32.zip`, `${appNameHypen}-linux32-${versionDashed}.zip`);
+            cp(
+                `${appNameNoSpace}-${version}-ia32.rpm`, `${appNameHypen}-linux32-${versionDashed}.rpm`);
+            cp(
+                `${appNameNoSpace}_${version}_i386.deb`, `${appNameHypen}-linux32-${versionDashed}.deb`);
+            cp(
+                `${appNameNoSpace}-${version}-ia32.zip`, `${appNameHypen}-linux32-${versionDashed}.zip`);
             cp(
                 `${appNameNoSpace}-${version}.rpm`, `${appNameHypen}-linux64-${versionDashed}.rpm`);
             cp(

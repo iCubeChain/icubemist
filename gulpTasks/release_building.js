@@ -231,7 +231,7 @@ gulp.task('release-dist', (done) => {
             break;
         case 'mac':
             cp(
-                path.join('mac', `${applicationName}-${version}.dmg`),
+                `${applicationName}-${version}.dmg`,
                 `${appNameHypen}-macosx-${versionDashed}.dmg`);
             break;
         case 'linux':

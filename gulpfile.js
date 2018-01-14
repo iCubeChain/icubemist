@@ -78,10 +78,10 @@ gulp.task('buildQueue', (cb) => {
         'bundling-interface',
         'copy-i18n',
         'build-dist',
-//        'release-dist',
+        'release-dist',
     ];
 
-//    if (options.win) tasks.push('build-nsis');
+    if (options.win) tasks.push('build-nsis');
 
     tasks = _.difference(tasks, skipTasks);
 
