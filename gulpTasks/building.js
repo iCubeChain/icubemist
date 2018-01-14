@@ -236,13 +236,13 @@ gulp.task('release-dist', (done) => {
             break;
         case 'linux':
             cp(
-                `${appNameNoSpace}-${version}-ia32.rpm`, `${appNameHypen}-linux32-${versionDashed}.rpm`);
+                `${appNameNoSpace}-${version}.i686.rpm`, `${appNameHypen}-linux32-${versionDashed}.rpm`);
             cp(
                 `${appNameNoSpace}_${version}_i386.deb`, `${appNameHypen}-linux32-${versionDashed}.deb`);
             cp(
                 `${appNameNoSpace}-${version}-ia32.zip`, `${appNameHypen}-linux32-${versionDashed}.zip`);
             cp(
-                `${appNameNoSpace}-${version}.rpm`, `${appNameHypen}-linux64-${versionDashed}.rpm`);
+                `${appNameNoSpace}-${version}.x86_64.rpm`, `${appNameHypen}-linux64-${versionDashed}.rpm`);
             cp(
                 `${appNameNoSpace}_${version}_amd64.deb`, `${appNameHypen}-linux64-${versionDashed}.deb`);
             cp(
