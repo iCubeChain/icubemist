@@ -25,7 +25,7 @@ if (process.platform === 'darwin') {
 const args = process.argv.slice(2);
 const options = minimist(args, {
     string: ['walletSource', 'test', 'skipTasks'],
-    boolean: _.flatten(['wallet', platforms]),
+    boolean: _.flatten(['wallet', 'dev', platforms]),
     default: {
         wallet: false,
         walletSource: 'master',
@@ -54,7 +54,7 @@ if (_.isEmpty(_.intersection(args, platformFlags))) {
 options.type = (options.wallet) ? 'wallet' : 'mist';
 options.platforms = platforms;
 options.activePlatforms = _.keys(_.pick(_.pick(options, platforms), (key) => { return key; }));
-
+options.buildmode = (options.dev) ? 'dev' : 'rel';
 exports.options = options;
 
 
@@ -78,16 +78,17 @@ gulp.task('buildQueue', (cb) => {
         'bundling-interface',
         'copy-i18n',
         'build-dist',
-        'release-dist',
     ];
 
-    if (options.win) tasks.push('build-nsis');
+    if(options.buildmode === 'rel') {
+        tasks.push('release-dist');
+        if (options.win) tasks.push('build-nsis');
+    }
 
     tasks = _.difference(tasks, skipTasks);
 
     runSeq.apply(null, _.flatten([tasks, cb]));
 });
-
 
 gulp.task('uploadQueue', (cb) => {
     const tasks = [];

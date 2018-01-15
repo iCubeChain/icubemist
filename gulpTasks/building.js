@@ -11,10 +11,8 @@ const Q = require('bluebird');
 const shell = require('shelljs');
 const version = require('../package.json').version;
 
-
 const type = options.type;
 const applicationName = (options.wallet) ? 'iCubeWallet' : 'iCubeMist';
-
 
 gulp.task('clean-dist', (cb) => {
     return del([
@@ -117,6 +115,32 @@ gulp.task('copy-i18n', () => {
 
 
 gulp.task('build-dist', (cb) => {
+    let ltarget = ['dir'];
+    let wtarget = ['dir'];
+    let idmg = false;
+    let mtarget = ['dir'];
+    if (options.buildmode === 'rel') {
+        ltarget = ['zip', 'deb', 'rpm'];
+        wtarget = ['zip'];
+        mtarget = ['zip', 'dmg'];
+        idmg = {
+            background: '../build/dmg-background.jpg',
+            iconSize: 128,
+            contents: [
+                {
+                    x: 441,
+                    y: 448,
+                    type: 'link',
+                    path: '/Applications'
+                },
+                {
+                    x: 441,
+                    y: 142,
+                    type: 'file'
+                }
+            ]
+        };
+    }
     const appPackageJson = _.extend({}, require('../package.json'), {  // eslint-disable-line global-require
         name: applicationName.replace(/\s/, ''),
         productName: applicationName,
@@ -131,42 +155,18 @@ gulp.task('build-dist', (cb) => {
             },
             linux: {
                 category: 'WebBrowser',
-                target: [
-                    'zip',
-                    'deb',
-                    'rpm'
-//                    'dir'
-                ]
+                target: ltarget
             },
             win: {
-                target: [
-                   'zip'
-//                    'dir'
-                ]
+                target: wtarget
             },
             mac: {
                 category: 'public.app-category.productivity',
+                target: mtarget
             },
-            dmg: {
-                background: '../build/dmg-background.jpg',
-                iconSize: 128,
-                contents: [
-                    {
-                        x: 441,
-                        y: 448,
-                        type: 'link',
-                        path: '/Applications'
-                    },
-                    {
-                        x: 441,
-                        y: 142,
-                        type: 'file'
-                    }
-                ]
-            }
+            dmg: idmg
         }
     });
-
     fs.writeFileSync(
         path.join(__dirname, `../dist_${type}`, 'app', 'package.json'),
         JSON.stringify(appPackageJson, null, 2), 'utf-8'
@@ -177,8 +177,10 @@ gulp.task('build-dist', (cb) => {
     if (options.win) targets.push(builder.Platform.WINDOWS);
     if (options.linux) targets.push(builder.Platform.LINUX);
 
+    let barch = (options.buildmode === 'rel') ? 'all' : 'x64';
+
     builder.build({
-        targets: builder.createTargets(targets, null, 'all'),
+        targets: builder.createTargets(targets, null, barch),
         projectDir: path.join(__dirname, `../dist_${type}`, 'app'),
         publish: 'never',
         config: {
