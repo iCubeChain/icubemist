@@ -43,7 +43,7 @@
                 "devToolsWebview": "__webview__",
                 "runTests": "テストを走らせる",
                 "logFiles": "ログファイルを表示する",
-                "ethereumNode": "Ethereum ノード",
+                "ethereumNode": "iCube ノード",
                 "network": "ネットワーク",
                 "mainNetwork": "メインネットワーク",
                 "startMining": "⛏ マイニングを始める",
