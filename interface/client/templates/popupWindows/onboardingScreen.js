@@ -156,7 +156,10 @@ Template['popupWindows_onboardingScreen'].events({
     'click .goto-start': function () {
         
         //设置为测试网
-        TemplateVar.set('isMainNet', false);
+        //TemplateVar.set('isMainNet', false);
+
+        //设置为主网
+        TemplateVar.set('isMainNet', true);
 
         TemplateVar.set('currentActive', 'start');
     },

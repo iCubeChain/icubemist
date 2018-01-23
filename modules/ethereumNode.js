@@ -12,8 +12,8 @@ const Sockets = require('./socketManager');
 const ClientBinaryManager = require('./clientBinaryManager');
 
 const DEFAULT_NODE_TYPE = 'geth';
-//const DEFAULT_NETWORK = 'main';
-const DEFAULT_NETWORK = 'test';
+const DEFAULT_NETWORK = 'main';
+//const DEFAULT_NETWORK = 'test';
 const DEFAULT_SYNCMODE = 'fast';
 
 const UNABLE_TO_BIND_PORT_ERROR = 'unableToBindPort';
