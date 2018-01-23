@@ -7,18 +7,11 @@
             <div class="onboarding-section onboarding-start">
                 <p class="description mrt30">{{i18n "mist.popupWindows.onboarding.description"}}</p>
 
-                {{#if TemplateVar.get "isMainNet"}}
                 <p>
                   <button class="goto-import-account"> {{i18n "mist.popupWindows.onboarding.gotoMainnet"}} </button>
                   {{i18n "mist.popupWindows.onboarding.gotoMainnetDescription"}}
                 </p>
-                {{else}}
-                <p class="test-network-box">
-                    <button class="start-testnet"> {{i18n "mist.popupWindows.onboarding.goToTestnet"}} </button>
-                    <br>
-                    {{i18n "mist.popupWindows.onboarding.goToTestnetDescription"}}
-                </p>
-                {{/if}}
+               
             </div>
 
             <div class="onboarding-section onboarding-import-account row">
