@@ -5,7 +5,7 @@
                 "label": "__app__",
                 "about": "關於__app__",
                 "checkForUpdates": "檢查更新...",
-                "checkForNodeUpdates": "Check for iCube node updates...",
+                "checkForNodeUpdates": "檢查iCube節點更新...",
                 "services": "服務",
                 "hide": "隱藏 __app__",
                 "hideOthers": "隱藏其他",
@@ -48,11 +48,11 @@
                 "mainNetwork": "主網路",
                 "startMining": "⛏ 開啓挖礦（僅限Testnet網路）",
                 "stopMining": "⛏ 停止挖礦",
-                "externalNode": "using external node",
-                "openRemix": "Open Remix IDE",
-                "nodeMode": "Chain download",
-                "fullNode": "Store full blockchain",
-                "lightNode": "Use light Node (experimental!)"
+                "externalNode": "使用外部節點",
+                "openRemix": "打開 Remix IDE",
+                "nodeMode": "下載鏈",
+                "fullNode": "存儲完整的區塊鍊",
+                "lightNode": "使用輕節點 (實驗版!)"
             },
             "window": {
                 "label": "視窗",
@@ -62,7 +62,7 @@
             },
             "help": {
                 "label": "幫助",
-                "reportBug": "Report an issue on Github"
+                "reportBug": "向Github提交問題報告"
             }
         },
         "errors": {
@@ -76,12 +76,12 @@
                 "darwin": "爲開啓時間同步，打開時間選項並勾選\"Set the time and date automatically\"."
             },
             "nodeChecksumMismatch": {
-                "title": "Checksum mismatch in downloaded node!",
-                "description": "__algorithm__: __hash__\n\nPlease install the __type__ node version __version__ manually."
+                "title": "所下載的節點校驗不匹配！",
+                "description": "__algorithm__: __hash__\n\n請手動下載 __type__ 節點 __version__."
             },
             "legacyChain": {
-                "title": "Legacy chain detected",
-                "description": "Your node is currently on the unsupported Ethereum Classic chain. To use this chain use tools provided by the ethereum classic project at\nhttps://ethereumclassic.github.io.\n\nTo revert to the main ethereum chain follow the tutorial here:\nhttps://github.com/ethereum/mist/releases/0.8.2"
+                "title": "檢測到舊版本區塊鍊",
+                "description": "您的節點當前位於不受支持的iCube Classic鏈上。 要使用這個链，請使用iCube經典項目提供的工具\nhttps://iCubeclassic.github.io.\n\n要恢復到主iCube鏈，請按照這裏的教程:\nhttps://github.com/iCube/mist/releases/0.8.2"
             }
         },
         "rightClick": {
@@ -96,13 +96,13 @@
             "timeSinceBlock": "自上一區塊已經過去的時間",
             "testnetExplain": "您正處於Testnet測試網路中，請勿發送真正的以太幣到這些地址中",
             "peers": "節點",
-            "checkingWhichNetwork": "Checking network...",
-            "mainNetwork": "Main-net",
-            "testNetwork": "Test-net",
-            "privateNetwork": "Private-net",
-            "mainnetExplain": "You are on the main Ethereum global network",
-            "privatenetExplain": "You are on a private net, DO NOT SEND any real icube to these addresses",
-            "unknownnetExplain": "Unable to determine which network you are on"
+            "checkingWhichNetwork": "網絡檢測...",
+            "mainNetwork": "主網絡",
+            "testNetwork": "測試網絡",
+            "privateNetwork": "私有網絡",
+            "mainnetExplain": "您位於主要的iCube全球網絡上",
+            "privatenetExplain": "你在一個私人的網絡，不要發送任何真正的iCube這些地址",
+            "unknownnetExplain": "無法確定您所在的網絡"
         },
         "sidebar": {
             "buttons": {
@@ -112,37 +112,37 @@
         "browserBar": {
             "buttons": {
                 "noAccounts": "未設置帳號",
-                "connect": "Connect"
+                "connect": "連接"
             }
         },
         "startScreen": {
             "runningNodeFound": "發現正在運行的iCube節點！",
             "startingNode": "正在開啓iCube節點……",
             "startedNode": "正在啓動應用程序……",
-            "nodeConnectionTimeout": "無法開啓iCube節點！<br><small>如果您已經<a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'>安裝Geth</a>，使用此命令運行： <br> <code>geth --ipcpath __path__</code></small><br> <small><a href='https://github.com/ethereum/mist/issues' class='button' target='_blank'> 或者上報此問題 </a></small>",
-            "nodeBinaryNotFound": "找不到iCube節點安裝文件！<br><small> <a href='https://www.ethereum.org/cli#geth' class='button' target='_blank'> 請事先手動開啓一個節點 </a> </small>",
+            "nodeConnectionTimeout": "無法開啓iCube節點！",
+            "nodeBinaryNotFound": "找不到iCube節點安裝文件！",
             "nodeSyncing": "需要同步iCube節點，請等待……",
             "nodeSyncInfo": "正在下載第__displayBlock__塊，共__highestBlock__。",
             "nodeSyncConnecting": "正在查找節點……",
             "peerSearchTimeout": "跳過節點搜索",
-            "stoppingNode": "Stopping iCube node...",
-            "nodeStarting": "iCube node starting up...",
-            "nodeStarted": "iCube node started",
-            "nodeConnected": "iCube node connected",
-            "nodeStopping": "iCube node stopping...",
-            "nodeStopped": "iCube node stopped",
-            "nodeError": "iCube node connection error :'(",
-            "unableToBindPort": "iCube node cannot run. Is another instance already running?",
-            "nodeSyncInfoStates": "Downloading block __displayBlock__ of __highestBlock__, <br> Downloading chain structure __displayState__ of __displayKnownStates__",
-            "nodeSyncFoundPeers": "Connecting to __peers__ peers...",
-            "launchApp": "Launch Application",
+            "stoppingNode": "停止iCube節點...",
+            "nodeStarting": "iCube節點啓動...",
+            "nodeStarted": "iCube節點已啓動",
+            "nodeConnected": "iCube節點連接",
+            "nodeStopping": "iCube節點正在停止...",
+            "nodeStopped": "iCube節點停止",
+            "nodeError": "iCube節點連接錯誤 :'(",
+            "unableToBindPort": "iCube節點無法運行。另一個實例已經在運行?",
+            "nodeSyncInfoStates": "下載 ____highestBlock__ 的區塊 __displayBlock__   下載__displayKnownStates__的鏈結構__displayState__",
+            "nodeSyncFoundPeers": "正在連接到__peers__個peer...",
+            "launchApp": "啓動程序",
             "clientBinaries": {
-                "scanning": "Checking for node update...",
-                "downloading": "Downloading new node...",
-                "loadConfig": "Loading client config...",
-                "filtering": "Filtering client binaries...",
-                "done": "iCube node up-to-date...",
-                "error": "Error running downloaded binary."
+                "scanning": "檢查節點更新...",
+                "downloading": "正在下載新節點...",
+                "loadConfig": "加載客戶端配置...",
+                "filtering": "篩選客戶端二進制文件...",
+                "done": "iCube節點最新...",
+                "error": "運行下載的二進制錯誤."
             }
         },
         "popupWindows": {
@@ -153,7 +153,7 @@
                 "creating": "正在生成帳號……",
                 "errors": {
                     "passwordMismatch": "您輸入的密碼不符合。",
-                    "passwordTooShort": "Make a longer password"
+                    "passwordTooShort": "生成更長的密碼"
                 }
             },
             "unlockMasterPassword": {
@@ -187,19 +187,19 @@
                 "errors": {
                     "connectionTimeout": "無法連接該節點，後台節點是否崩潰了？",
                     "wrongPassword": "密碼錯誤",
-                    "multipleKeysMatchAddress": "Multiple keys match address, please remove duplicates from keystore (menu -> accounts -> backup -> accounts)",
-                    "insufficientFundsForGas": "Insufficient funds in main account (icubebase) to pay for gas",
-                    "sameAccount": "Can't send to itself"
+                    "multipleKeysMatchAddress": "多個祕鑰匹配地址，請刪除keystore中的重複項（菜單 - >賬戶 - >備份 - >賬戶）",
+                    "insufficientFundsForGas": "主賬戶（iCubebase）資金不足以支付燃料",
+                    "sameAccount": "不能發送給自己"
                 },
-                "transactionThrow": "The contract won't allow this transaction to be executed",
-                "noEstimate": "We couldn't estimate the gas.",
-                "parameters": "Parameters",
-                "showRawBytecode": "show raw data",
-                "showDecodedParameters": "show decoded parameters",
-                "lookupData": "Try to decode data",
-                "lookupDataExplainer": "Look this up on the internet",
-                "overBlockGasLimit": "The gas required for this execution could exceed the block gas limit.",
-                "notEnoughGas": "Gas might not be enough to successfully finish this transaction.<br>Click here to increase the gas amount."
+                "transactionThrow": "合同不允許這個交易被執行",
+                "noEstimate": "我们無法估計燃料。",
+                "parameters": "參數",
+                "showRawBytecode": "顯示原始數矩",
+                "showDecodedParameters": "顯示解碼的參數",
+                "lookupData": "嘗試解碼數矩",
+                "lookupDataExplainer": "在互聯網上查看這個",
+                "overBlockGasLimit": "這種執行所需的燃料可能會超過限制。",
+                "notEnoughGas": "燃料可能不足以成功完成這筆交易。點擊這裏增加燃料數量。"
             },
             "onboarding": {
                 "description": "iCube是一個用於在區塊鏈上創建應用的去中心化平台：一種用於轉移價值和資產，永遠存在並且無法被篡改的軟體",
@@ -208,7 +208,7 @@
                 "gotoMainnet": "使用主網路",
                 "gotoMainnetDescription": "您需要一些以太幣來創建和執行合約。別擔心，我們將幫您獲取一些……",
                 "doYouHaveAWalletFile": "您擁有一個錢包文件嗎？",
-                "walletFileDescription": "<p>如果您參與了2014年的iCube預售，您應該有一個文件名爲<code>ethereum_wallet_backup.json</code>的錢包文件。在您購買後已被下載並且也發送到您信箱。</p>",
+                "walletFileDescription": "<p>如果您參與了2014年的iCube預售，您應該有一個文件名爲<code>iCube_wallet_backup.json</code>的錢包文件。在您購買後已被下載並且也發送到您信箱。</p>",
                 "dropFilesHere": "預售文件拖入此處",
                 "creating": "正在創建……",
                 "importing": "正在匯入……",
@@ -247,22 +247,22 @@
                 "startingSync": "Getting ready to sync.."
             },
             "updateAvailable": {
-                "newVersionAvailable": "New __name__ version available",
-                "version": "Version",
-                "downloadURL": "Download URL",
-                "checksum": "Checksum",
-                "downloadAndRestart": "Update and Restart",
-                "download": "Download new version",
-                "skipUpdate": "Skip Update",
-                "notNow": "Ask me later",
-                "checking": "Checking for updates to __name__...",
-                "noUpdateFound": "No update found. You are running the latest version of __name__."
+                "newVersionAvailable": "新的 __name__ 版本可用",
+                "version": "版本",
+                "downloadURL": "下載URL",
+                "checksum": "校驗",
+                "downloadAndRestart": "更新並重啓",
+                "download": "下載新版本",
+                "skipUpdate": "跳過更新",
+                "notNow": "稍後詢問",
+                "checking": "檢測 __name__ 的更新...",
+                "noUpdateFound": "找不到更新。 您正在運行__name__ 的最新版本"
             },
             "connectAccount": {
-                "chooseAccountTitle": "Choose account",
-                "createAccount": "Create new account",
-                "pinToSidebar": "Pin app to the sidebar",
-                "connectAccountDescription": "You are sharing your identity with __dappName__. This allows the app to see any public information of your accounts, including balances connected to it."
+                "chooseAccountTitle": "選擇賬戶",
+                "createAccount": "創建新賬戶",
+                "pinToSidebar": "將應用固定到邊欄",
+                "connectAccountDescription": "您與__dappName__分享您的身份，這將允許應用程序查看您的帐户的任何公共信息，包括餘額。"
             }
         }
     },
@@ -270,12 +270,12 @@
         "checksumAlert": "該地址格式有效，但是由於沒有安全機制保證您不會拼寫錯誤，因此請反覆確認您輸入正確。如果可能的話，請驗證一下安全圖標是否相同。",
         "identiconHelper": "這是一個安全圖標，如果地址有任何改動，該圖標將會完全不一樣",
         "type": {
-            "address": "Address",
-            "bool": "Boolean",
-            "int": "Integer",
-            "uint": "Natural Number",
-            "string": "String",
-            "bytes": "Bytes"
+            "address": "地址",
+            "bool": "二進制",
+            "int": "整數",
+            "uint": "自然數",
+            "string": "字符串",
+            "bytes": "字節"
         }
     }
 }
