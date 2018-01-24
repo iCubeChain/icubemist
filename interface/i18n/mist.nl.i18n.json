@@ -221,7 +221,7 @@
                     "connectionTimeout": "Kon niet verbinden met de node, is het in de achtergrond uitgevallen?",
                     "wrongPassword": "Onjuist wachtwoord",
                     "multipleKeysMatchAddress": "Meerdere keys matchen hebben hetzelfde adres, verwijder duplicaten uit de keystore (menu -> accounts -> backup -> accounts)",
-                    "insufficientFundsForGas": "Onvoldoende saldo in hoofd account (Etherbase) om gas te betalen",
+                    "insufficientFundsForGas": "Onvoldoende saldo in hoofd account (iCubebase) om gas te betalen",
                     "sameAccount": "Kan niet naar zichzelf versturen"
                 },
                 "showRawBytecode": "Toon ruwe data",
@@ -252,7 +252,7 @@
                 "loadItDescription": "Als je al Bitcoins of een andere cryptocurrency hebt kan je deze makkelijk inwisselen voor Ether met Shapeshift.<br><br> Wij raden aan een hoeveelheid van tussen de <strong>0.25 en 1 Ether</strong> om te wisselen.",
                 "mineItDescription": "<strong>Op het testnetwerk kun je zelf Ether mijnen door te gaan naar het <em>Ontwikkelaars</em> menu en te kiezen voor <em>Begin Mining</em>. </strong> <br> <strong> PROBEER GEEN ECHTE ETHER NAAR DIT ADRES TE VERSTUREN </strong>",
                 "you": "Je",
-                "etherbase": "Centrale account (Etherbase)",
+                "etherbase": "Centrale account (iCubebase)",
                 "depositBitcoin": "Bitcoin Storten",
                 "viaShapeshift": "Direct omwisselen via <a href='https://shapeshift.io/' target='_blank'>Shapeshift</a>",
                 "learnIt": "Leer terwijl je wacht",
