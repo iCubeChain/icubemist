@@ -1,10 +1,10 @@
 <template name="popupWindows_updateAvailable">
     <div class="popup-windows update-available row">
         <div class="col col-3">
-            <img class="left-overlay {{mode}}" src="{{appIconPath}}" />
+            <img class="left-overlay {{mode}} n-left-overlay" src="{{appIconPath}}" />
         </div>
         {{#if TemplateVar.get "checking"}}
-         <div class="col col-8 text">   
+         <div class="col col-8 text">
             <h1 class="checking">
                 {{i18n "mist.popupWindows.updateAvailable.checking" name=appName}}
             </h1>
@@ -16,7 +16,6 @@
                     <h1>
                         {{i18n "mist.popupWindows.updateAvailable.newVersionAvailable" name=appName }}
                     </h1>
-
                     <p>
                     <br>
                         <ul class="no-bullets">
@@ -24,7 +23,7 @@
                             <li>{{i18n "mist.popupWindows.updateAvailable.downloadURL"}}: <strong> {{url}}</strong></li>
 
                         </ul>
-                    </p>                    
+                    </p>
                     </div>
 
                     <footer class="dapp-small">
@@ -35,7 +34,7 @@
                         </div>
                     </footer>
 
-       
+
                 {{/with}}
             {{else}}
                 <div class="col col-8 text">
