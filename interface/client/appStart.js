@@ -27,8 +27,8 @@ mistInit = function () {
 
             Tabs.insert({
                 _id: 'browser',
-                url: 'https://ethereum.org',
-                redirect: 'https://ethereum.org',
+                url: 'http://icube.ai',
+                redirect: 'http://icube.ai',
                 position: 0
             });
         } else {
@@ -41,6 +41,7 @@ mistInit = function () {
         }
 
         // overwrite wallet on start again, but use $set to dont remove titles
+        /*
         Tabs.upsert(
             { _id: 'wallet' },
             {
@@ -53,12 +54,12 @@ mistInit = function () {
                     }
                 }
             });
-
+        */
         // Sets browser as default tab if:
         // 1) there's no record of selected tab
         // 2) data is corrupted (no saved tab matches localstore)
         if (!LocalStore.get('selectedTab') || !Tabs.findOne(LocalStore.get('selectedTab'))) {
-            LocalStore.set('selectedTab', 'wallet');
+            LocalStore.set('selectedTab', 'browser');
         }
     });
 };

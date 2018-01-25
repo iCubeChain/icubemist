@@ -12,7 +12,7 @@ const shell = require('shelljs');
 const version = require('../package.json').version;
 
 const type = options.type;
-const applicationName = (options.wallet) ? 'iCubeWallet' : 'iCubeMist';
+const applicationName = (options.wallet) ? 'iCubeWallet' : 'iCubeSphere';
 
 gulp.task('clean-dist', (cb) => {
     return del([
@@ -84,7 +84,7 @@ gulp.task('bundling-interface', (cb) => {
     };
 
     if (type === 'wallet') {
-        if (options.walletSource === 'local') {
+        if (options.walletSource !== 'remote') {
             console.log('Use local wallet at ../icubewallet/app');
             bundle(`&& cd ../../icubewallet/app \
                 && meteor-build-client ../../icubemist/dist_${type}/app/interface/wallet -p ""`);

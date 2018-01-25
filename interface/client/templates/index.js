@@ -19,7 +19,7 @@ Template.body.helpers({
     */
     'renderApp': function () {
         if (_.isEmpty(location.hash)) {
-            $('title').text('Mist');
+            $('title').text('Sphere');
             return 'layout_main';
         } else {
             var renderWindow = location.hash.match(/#([a-zA-Z]*)_?/);
