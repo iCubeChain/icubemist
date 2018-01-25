@@ -77,7 +77,7 @@
             },
             "nodeChecksumMismatch": {
                 "title": "所下载的节点检验不匹配!",
-                "description": "__algorithm__: __hash__\n\nPlease install the __type__ node version __version__ manually."
+                "description": "__algorithm__: __hash__\n\n请手动安装 __type__ 的节点版本 __version__ 。"
             },
             "legacyChain": {
                 "title": "检测到旧版区块链",
@@ -153,7 +153,7 @@
                 "creating": "正在生成账户……",
                 "errors": {
                     "passwordMismatch": "你输入的密码不匹配。",
-                    "passwordTooShort": "Make a longer password"
+                    "passwordTooShort": "生成更长的密码"
                 }
             },
             "unlockMasterPassword": {
@@ -203,12 +203,12 @@
             },
             "onboarding": {
                 "description": "iCube是一个用于在区块链上创建应用的去中心化平台：一种用于转移价值和资产，永远存在并且无法被篡改的软件",
-                "goToTestnet": "使用测试网络 (Rinkeby)",
+                "goToTestnet": "使用测试网络",
                 "goToTestnetDescription": "请放心在沙盒测试网络中测试该技术，无需使用真正的ICUBE。",
                 "gotoMainnet": "使用主网络",
                 "gotoMainnetDescription": "你需要一些ICUBE来创建和执行合约。别担心，我们将帮你获取一些……",
                 "doYouHaveAWalletFile": "你拥有一个钱包文件吗？",
-                "walletFileDescription": "<p>如果你参与了2014年的iCube预售，你应该有一个文件名为<code>ethereum_wallet_backup.json</code>的钱包文件。在你购买后已被下载并且也发送到你邮箱。</p>",
+                "walletFileDescription": "<p>如果你参与了2014年的iCube预售，你应该有一个文件名为icube_wallet_backup.json的钱包文件。在你购买后已被下载并且也发送到你邮箱。</p>",
                 "dropFilesHere": "预售文件拖入此处",
                 "creating": "正在创建……",
                 "importing": "正在导入……",
@@ -244,11 +244,11 @@
                 "viaShapeshift": "Instant conversion via <a href='https://shapeshift.io/' target='_blank'>Shapeshift</a>",
                 "syncMessage": "Block __displayBlock__ of __highestBlockString__",
                 "syncMessageWithStates": "Block __displayBlock__ of __highestBlockString__ (Chain structure __statesPercent__%)",
-                "startingSync": "Getting ready to sync.."
+                "startingSync": "准备同步..."
             },
             "updateAvailable": {
-                "newVersionAvailable": "New __name__ version available",
-                "version": "Version",
+                "newVersionAvailable": "有 __name__ 的新版本可用",
+                "version": "版本",
                 "downloadURL": "下载URL",
                 "checksum": "校验",
                 "downloadAndRestart": "更新并重启",
