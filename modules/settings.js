@@ -205,7 +205,7 @@ class Settings {
     }
 
     get appName() {
-        return this.uiMode === 'mist' ? 'iCubeMist' : 'iCubeWallet';
+        return this.uiMode === 'mist' ? 'iCubeSphere' : 'iCubeWallet';
     }
 
     get appLicense() {
