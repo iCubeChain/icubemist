@@ -222,7 +222,7 @@
                 "loadItDescription": "如果您已經擁有比特幣或者任何其他加密貨幣，您可以使用shapeshift來方便地轉換爲以太幣。<br><br>我們推薦您存入<strong>0.25到1以太幣</strong>.",
                 "mineItDescription": "<strong>如果您在testnet測試網路中，您可以自己挖掘一些以太幣，點擊<em>開發</em>選單並選擇<em>開啓挖礦</em>。</strong> <br> <strong>請勿將真正的以太幣發往該地址！</strong>",
                 "you": "您本人",
-                "etherbase": "主帳號（icubebase）",
+                "etherbase": "主帳號（iCubebase）",
                 "depositBitcoin": "存入比特幣",
                 "learnIt": "在等待期間學習一下",
                 "downloadingBlocks": "正在下載區塊",
