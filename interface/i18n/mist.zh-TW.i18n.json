@@ -215,7 +215,7 @@
                 "skip": "跳過該步驟",
                 "next": "下一個",
                 "protectTitle": "保護您的帳號",
-                "protectDescription": "爲您的新帳號選擇一個密碼。請像保持您家鑰匙一樣保證密碼強度足夠安全！",
+                "protectDescription": "爲您的新帳號選擇一個密碼。請像保护您家鑰匙一樣保證密碼強度足夠安全！",
                 "accountTitle": "正在裝載！",
                 "accountTitleTestnet": "挖到一些ICUBE！",
                 "etherDescription": "iCube網路是基於一種叫做“ICUBE”的代幣。您需要一點ICUBE來嘗試在iCube網路上的任何操作。",
@@ -228,7 +228,7 @@
                 "downloadingBlocks": "正在下載區塊",
                 "tutorial1Description": "<p>現在您只需等待下載完成。這裏是一些閱讀推薦：</p> <h4>創造您自己的貨幣</h4> <p>創造一個固定發行量的加密貨幣，這些代幣代表真正的世界資產，等等</p>",
                 "tutorial2Description": "<h4>創建一個群眾募資</h4> <p>爲一個共同的目標籌集資金，完全可信而無需第三方擔保。繞開傳統融資系統的障礙，通過區塊鏈直接和出資人共同籌資建立一個機構。</p>",
-                "tutorial3Description": "<h4>區塊鏈機構</h4> <p>創建一個自治的機構，並且制定關於資金如何使用以太誰能做決定的不可違背的規則，讓您的贊助人在如何使用資金上發揮積極作用。</p>",
+                "tutorial3Description": "<h4>區塊鏈機構</h4> <p>創建一個自治的機構，並且制定關於資金如何使用不可違背的規則，讓您的贊助人在如何使用資金上發揮積極作用。</p>",
                 "buttons": {
                     "showPassword": "顯示密碼",
                     "importAccount": "導入帳號",
