@@ -104,7 +104,6 @@ Meteor.startup(function () {
                 console.warn(`numeral.js couldn't set number formating: ${err.message}`);
             }
             EthTools.setLocale(lang);
-            console.info('hello123456 : ' + EthTools.getUnit());
         }
     });
 });
