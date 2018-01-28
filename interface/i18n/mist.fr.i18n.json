@@ -98,7 +98,7 @@
             "checkingWhichNetwork": "Checking network...",
             "mainNetwork": "Main-net",
             "testNetwork": "Test-net",
-            "privateNetwork": "Private-net",
+            "privateNetwork": "iCubeNet",
             "mainnetExplain": "You are on the main Ethereum global network",
             "testnetExplain": "You are on the testnet, DO NOT SEND any real ether to these addresses",
             "privatenetExplain": "You are on a private net, DO NOT SEND any real ether to these addresses",

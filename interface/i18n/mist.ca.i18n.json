@@ -119,7 +119,7 @@
             "checkingWhichNetwork": "Comprovant la xarxa...",
             "mainNetwork": "Main-net",
             "testNetwork": "Test-net",
-            "privateNetwork": "Private-net",
+            "privateNetwork": "iCubeNet",
             "mainnetExplain": "Ets a la xarxa gobal d'Ethereum principal",
             "testnetExplain": "Ets a la __name__. NO ENVIÏS cap Ether real a aquestes adreces",
             "privatenetExplain": "Ets a la xara privada. NO ENVIÏS cap Ether real a aquestes adreces",
