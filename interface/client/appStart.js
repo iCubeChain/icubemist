@@ -3,6 +3,22 @@ The init function of Mist
 
 @method mistInit
 */
+
+LocalStore.set('dapp_etherUnit', 'icube')
+
+getUnit = function(unit){                                                                                          // 59
+    if(!_.isString(unit)) {                                                                                            // 60
+        unit = LocalStore.get('dapp_etherUnit');                                                                       // 61
+                                                                                                                       // 62
+        if(!unit) {                                                                                                    // 63
+            unit = 'icube';                                                                                            // 64
+            LocalStore.set('dapp_etherUnit', unit);                                                                    // 65
+        }                                                                                                              // 66
+    }                                                                                                                  // 67
+                                                                                                                       // 68
+    return unit;                                                                                                       // 69
+};
+
 mistInit = function () {
     console.info('Initialise Mist Interface');
 
@@ -88,6 +104,7 @@ Meteor.startup(function () {
                 console.warn(`numeral.js couldn't set number formating: ${err.message}`);
             }
             EthTools.setLocale(lang);
+            console.info('hello123456 : ' + EthTools.getUnit());
         }
     });
 });
