@@ -115,7 +115,7 @@
             "checkingWhichNetwork": "Netwerk aan het controleren...",
             "mainNetwork": "Main-net",
             "testNetwork": "Test-net",
-            "privateNetwork": "Private-net",
+            "privateNetwork": "iCubeNet",
             "mainnetExplain": "Je zit op het main Ethereum wereldwijde netwerk",
             "testnetExplain": "Je bent actief op het __name__, VERSTUUR GEEN echte Ether naar deze adressen",
             "privatenetExplain": "Je zit op een private net, VERSTUUR GEEN echte Ether naar deze adressen",

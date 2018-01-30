@@ -99,7 +99,7 @@
             "checkingWhichNetwork": "網絡檢測...",
             "mainNetwork": "主網絡",
             "testNetwork": "測試網絡",
-            "privateNetwork": "私有網絡",
+            "privateNetwork": "iCubeNet",
             "mainnetExplain": "您位於主要的iCube全球網絡上",
             "privatenetExplain": "你在一個私人的網絡，不要發送任何真正的iCube這些地址",
             "unknownnetExplain": "無法確定您所在的網絡"

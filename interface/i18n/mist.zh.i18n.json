@@ -99,9 +99,9 @@
             "checkingWhichNetwork": "检测网络...",
             "mainNetwork": "主网",
             "testNetwork": "测试网",
-            "privateNetwork": "私有网",
+            "privateNetwork": "iCubeNet",
             "mainnetExplain": "你位于主要的iCube全球网络上",
-            "privatenetExplain": "你位于私有网络，请不要发送任何真实的iCube到这些地址",
+            "privatenetExplain": "你位于私有网，请不要发送任何真实的iCube到这些地址",
             "unknownnetExplain": "无法识别你所在的网络"
         },
         "sidebar": {
