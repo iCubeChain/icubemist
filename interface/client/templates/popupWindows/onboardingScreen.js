@@ -31,6 +31,9 @@ Template['popupWindows_onboardingScreen'].onCreated(function () {
     var oldData;
     TemplateVar.set('readyToLaunch', false);
 
+    // hardcode mainnet
+    TemplateVar.set('isMainNet', true);
+
     // check for block status
     this.syncFilter = web3.eth.isSyncing(function (error, syncing) {
         if (!error) {
@@ -71,7 +74,7 @@ Template['popupWindows_onboardingScreen'].onCreated(function () {
     }, 1000);
 
 
-    TemplateVar.set('currentActive', 'start');
+    TemplateVar.set('currentActive', 'import-account');
 
     // store the last class
     this.autorun(function () {
@@ -154,7 +157,7 @@ Template['popupWindows_onboardingScreen'].helpers({
 
 Template['popupWindows_onboardingScreen'].events({
     'click .goto-start': function () {
-        
+
         //设置为测试网
         //TemplateVar.set('isMainNet', false);
 

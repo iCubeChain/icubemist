@@ -387,6 +387,7 @@ let menuTempl = function (webviews) {
     let devtToolsSubMenu;
     let curWindow;
 
+
     // change for wallet
     if (Settings.uiMode === 'mist') {
         devtToolsSubMenu = [{
@@ -432,6 +433,7 @@ let menuTempl = function (webviews) {
         submenu: devtToolsSubMenu,
     });
 
+/*
     if (Settings.uiMode === 'mist') {
         devToolsMenu.push({
             label: i18n.t('mist.applicationMenu.develop.openRemix'),
@@ -517,7 +519,7 @@ let menuTempl = function (webviews) {
             submenu: nodeSubmenu,
         });
     }
-
+*/
     // add network switch
     devToolsMenu.push({
         label: i18n.t('mist.applicationMenu.develop.network'),
@@ -579,7 +581,7 @@ let menuTempl = function (webviews) {
     }
 
     // Enables mining menu: only in Solo mode and Ropsten network (testnet)
-    if (ethereumNode.isOwnNode && (ethereumNode.isTestNetwork || ethereumNode.isDevNetwork)) {
+    if (ethereumNode.isOwnNode) {
         devToolsMenu.push({
             label: (global.mining) ? i18n.t('mist.applicationMenu.develop.stopMining') : i18n.t('mist.applicationMenu.develop.startMining'),
             accelerator: 'CommandOrControl+Shift+M',
@@ -650,6 +652,8 @@ let menuTempl = function (webviews) {
             }
         );
     }
+
+/*
     helpMenu.push({
         label: i18n.t('mist.applicationMenu.help.mistWiki'),
         click() {
@@ -666,7 +670,7 @@ let menuTempl = function (webviews) {
             shell.openExternal('https://github.com/ethereum/mist/issues');
         },
     });
-
+*/
     menu.push({
         label: i18n.t('mist.applicationMenu.help.label'),
         role: 'help',
