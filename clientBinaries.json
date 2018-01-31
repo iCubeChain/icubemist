@@ -18,7 +18,7 @@
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
+                                    "iCubeNode",
                                     "1.7.2"
                                 ]
                             }
@@ -38,7 +38,7 @@
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
+                                    "iCubeNode",
                                     "1.7.2"
                                 ]
                             }
@@ -53,14 +53,14 @@
                             "md5": "cf60906fb51076dd6da6b99bc9ea121d",
                             "bin": "geth-darwin-amd64-1.7.2-1db4ecdc/geth"
                         },
-                        "bin": "geth",
+                        "bin": "iCubeNode",
                         "commands": {
                             "sanity": {
                                 "args": [
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
+                                    "iCubeNode",
                                     "1.7.2"
                                 ]
                             }
@@ -82,7 +82,7 @@
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
+                                    "iCubeNode",
                                     "1.7.2"
                                 ]
                             }
@@ -102,7 +102,7 @@
                                     "version"
                                 ],
                                 "output": [
-                                    "Geth",
+                                    "iCubeNode",
                                     "1.7.2"
                                 ]
                             }

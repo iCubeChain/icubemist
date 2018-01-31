@@ -462,7 +462,7 @@ class EthereumNode extends EventEmitter {
 
                         if (nodeType === 'geth') {
                             if (dataStr.indexOf('fatal: error') >= 0) {
-                                const error = new Error(`Geth error: ${dataStr}`);
+                                const error = new Error(`iCubeNode error: ${dataStr}`);
 
                                 if (dataStr.indexOf('bind') >= 0) {
                                     error.tag = UNABLE_TO_BIND_PORT_ERROR;
