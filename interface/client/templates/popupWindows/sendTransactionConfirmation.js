@@ -279,6 +279,20 @@ Template['popupWindows_sendTransactionConfirmation'].helpers({
         return TemplateVar.get('estimatedGas') === 'invalid'
                 || TemplateVar.get('estimatedGas') === 0
                 || typeof TemplateVar.get('estimatedGas') === 'undefined';
+    },
+    /**
+     Clear amount from characters
+
+     @method (clearAmountFromChars)
+     */
+    'clearUnitChars' : function (amount) {
+        // window.alert(amount)
+        amount = (~amount.indexOf('.'))
+            ? amount.replace(/\,/g, '')
+            : amount;
+
+        return amount.replace(/ether/g, '');
+
     }
 });
 

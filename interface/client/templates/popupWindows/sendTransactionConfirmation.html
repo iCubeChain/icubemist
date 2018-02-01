@@ -1,5 +1,6 @@
 <template name="popupWindows_sendTransactionConfirmation">
-    <div class="popup-windows tx-info">
+    <div class="
+    popup-windows tx-info">
         <form action="#">
             {{#with $.Session.get "data"}}
                 {{#if $and data (TemplateVar.get "toIsContract")}}
@@ -100,7 +101,7 @@
                                     {{#if $eq (dapp_formatNumber (TemplateVar.get "estimatedGas") "0") "0"}}
                                         <span class="red"><i class="icon-shield"></i> {{i18n "mist.popupWindows.sendTransactionConfirmation.noEstimate"}}</span>
                                     {{else}}
-                                        {{estimatedFee}} ({{dapp_formatNumber (TemplateVar.get "estimatedGas") "0,0"}} gas)
+                                        {{clearUnitChars (estimatedFee)}} ICUBE ({{dapp_formatNumber (TemplateVar.get "estimatedGas") "0,0"}} gas)
                                     {{/if}}
 
 
