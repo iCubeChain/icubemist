@@ -151,6 +151,7 @@
                 "enterPassword": "输入密码",
                 "repeatPassword": "重复密码",
                 "creating": "正在生成账户……",
+                "backupHint": "备份你的密钥文件和密码!\n\n你可以通过选择菜单栏上的 -> “帐户” -> “备份” -> “帐户”，来找到你的密钥文件夹. 备份 \"keystore\" 文件夹 ，保存好不要丢失!",
                 "errors": {
                     "passwordMismatch": "你输入的密码不匹配。",
                     "passwordTooShort": "生成更长的密码"
