@@ -76,7 +76,7 @@
                 "darwin": "为开启时间同步，打开时间选项并勾选\"Set the time and date automatically\"."
             },
             "nodeChecksumMismatch": {
-                "title": "所下载的节点检验不匹配!",
+                "title": "下载的钱包节点验证不正确!",
                 "description": "__algorithm__: __hash__\n\n请手动安装 __type__ 的节点版本 __version__ 。"
             },
             "legacyChain": {
@@ -142,7 +142,7 @@
                 "loadConfig": "加载客户端配置...",
                 "filtering": "筛选客户端二进制文件...",
                 "done": "iCube节点最新...",
-                "error": "运行下载的二进制错误."
+                "error": "运行下载的程序错误"
             }
         },
         "popupWindows": {
@@ -218,8 +218,8 @@
                 "protectDescription": "为你的新账户选择一个密码。请像保护你家钥匙一样保证密码强度足够安全！",
                 "accountTitle": "正在装载！",
                 "accountTitleTestnet": "挖到一些ICUBE！",
-                "etherDescription": "iCube網路是一種基於“ICUBE”的代幣。您只需要少量的ICUBE代幣就可以在iCube網路上的任何操作。",
-                "loadItDescription": "如果您已經擁有比特幣或者任何其他的加密貨幣，你可以通過交易所轉換成ICUBE幣。<br><br>我們推薦您存入<strong>0.25到1ICUBE</strong>。",
+                "etherDescription": "iCube网络是一种基于“ICUBE”的代币，你只需要少量的ICUBE代币就可以在iCube网络上做任何操作。",
+                "loadItDescription": "如果你已经拥有比特币或者任何其他的加密货币，你可以通过交易所的方式转换成ICUBE币。",
                 "mineItDescription": "<strong>如果你在testnet测试网络中，你可以自己挖掘一些ICUBE，点击<em>开发</em>菜单并选择<em>开启挖矿</em>。</strong> <br> <strong>请勿将真正的ICUBE发往该地址！</strong>",
                 "you": "你本人",
                 "etherbase": "主账户（iCubebase）",

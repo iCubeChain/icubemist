@@ -76,7 +76,7 @@
                 "darwin": "爲開啓時間同步，打開時間選項並勾選\"Set the time and date automatically\"."
             },
             "nodeChecksumMismatch": {
-                "title": "所下載的節點校驗不匹配！",
+                "title": "下載的錢包節點驗證不正確！",
                 "description": "__algorithm__: __hash__\n\n請手動下載 __type__ 節點 __version__."
             },
             "legacyChain": {
