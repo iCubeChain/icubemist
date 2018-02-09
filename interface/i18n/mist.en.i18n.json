@@ -247,7 +247,7 @@
                 "gotoMainnet": "Use the main network",
                 "gotoMainnetDescription": "You’ll need some ICUBE to create and execute contracts. Don't worry, we'll help you get some...",
                 "doYouHaveAWalletFile": "Do you have a wallet file?",
-                "walletFileDescription": "<p>If you already have an iCube wallet file that was backed up before, you can import the Wallet file here. </p>",
+                "walletFileDescription": "<p>If you already have an iCube wallet file that was backed up before, you can import the Wallet file here. (You may need to restart the program when you the import the Wallet file for the first time.)</p>",
                 "dropFilesHere": "Drag your Wallet file here",
                 "creating": "Creating...",
                 "importing": "Importing...",

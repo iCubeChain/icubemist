@@ -209,7 +209,7 @@
                 "gotoMainnet": "使用主网络",
                 "gotoMainnetDescription": "你需要一些ICUBE来创建和执行合约。别担心，我们将帮你获取一些……",
                 "doYouHaveAWalletFile": "你拥有一个钱包文件吗？",
-                "walletFileDescription": "<p>如果你已经拥有一个之前备份的iCube钱包文件，可以在此将钱包文件进行导入。</p>",
+                "walletFileDescription": "<p>如果你已经拥有一个之前备份的iCube钱包文件，可以在此将钱包文件进行导入（初次导入钱包文件可能会需要重启应用）。</p>",
                 "dropFilesHere": "钱包文件拖入此处",
                 "creating": "正在创建……",
                 "importing": "正在导入……",
