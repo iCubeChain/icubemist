@@ -37,14 +37,14 @@
                                 {{/if}}
                             </div>
 
-                            <div>
+                            <div class="n-new-thumb">
                                 {{#if to}}
                                     {{#if TemplateVar.get "toIsContract"}}
                                         <i class="overlap-icon icon-doc"></i>
                                     {{else}}
                                         <i class="overlap-icon icon-key"></i>
                                     {{/if}}
-                                    {{> dapp_identicon identity=to class="dapp-large"}}
+                                    {{> icube_identicon_send identity=to class="dapp-large"}}
                                     <br>
                                     <a href="http://etherscan.io/address/{{to}}#code" class="simptip-position-bottom simptip-movable" data-tooltip="{{to}}" target="_blank">{{shortenAddress to}}</a>
                                 {{else}}
