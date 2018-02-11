@@ -33,9 +33,9 @@
                                             {{#if dappAccounts.count}}
                                                 <button class="display">
                                                     <span>{{dappAccounts.count}} {{i18n 'mist.sidebar.submenu.account' count=dappAccounts.count}}</span>
-                                                        <span class="dapp-identicon-container">
+                                                        <span class="dapp-identicon-container n-new-thumb">
                                                         {{#each (dappAccounts 3)}}
-                                                            {{> dapp_identicon identity=address class="dapp-tiny"}}
+                                                            {{> icube_identicon_account identity=address class="dapp-tiny"}}
                                                         {{/each}}
                                                     </span>
                                                 </button>
