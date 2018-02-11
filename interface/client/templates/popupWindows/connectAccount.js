@@ -40,6 +40,15 @@ var pinToSidebar = function () {
     }
 };
 
+// icube hacks
+function icube_str_replace(_obj, s, r)
+{
+    if (typeof s === 'undefined') s = 'Etherbase';
+    if (typeof r === 'undefined') r = 'iCubebase';
+    if (typeof _obj === 'string') _obj = _obj.replace(new RegExp(s, 'g'), r);
+    return _obj;
+}
+
 var updateSelectedTabAccounts = function (accounts) {
     var tabId = TemplateVar.get('selectedTab')._id;
     Tabs.update(tabId, { $set: {
@@ -107,6 +116,9 @@ Template['popupWindows_connectAccount'].helpers({
     */
     'selected': function () {
         return (_.contains(TemplateVar.get('accounts'), this.address)) ? 'selected' : '';
+    },
+    'mainName':function (mainName) {
+        return icube_str_replace(mainName);
     }
 });
 
