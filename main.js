@@ -51,7 +51,7 @@ require('./modules/ipcCommunicator.js');
 const appMenu = require('./modules/menuItems');
 const ipcProviderBackend = require('./modules/ipc/ipcProviderBackend.js');
 const ethereumNode = require('./modules/ethereumNode.js');
-const swarmNode = require('./modules/swarmNode.js');
+// const swarmNode = require('./modules/swarmNode.js');
 const nodeSync = require('./modules/nodeSync.js');
 
 global.webviews = [];
@@ -167,7 +167,7 @@ Only do this if you have secured your HTTP connection or you know what you are d
 });
 
 // Allows the Swarm protocol to behave like http
-protocol.registerStandardSchemes(['bzz']);
+// protocol.registerStandardSchemes(['bzz']);
 
 onReady = () => {
     global.config = db.getCollection('SYS_config');
@@ -179,14 +179,14 @@ onReady = () => {
     Windows.init();
 
     // Enable the Swarm protocol
-    protocol.registerHttpProtocol('bzz', (request, callback) => {
-        const redirectPath = `${Settings.swarmURL}/${request.url.replace('bzz:/', 'bzz://')}`;
-        callback({ method: request.method, referrer: request.referrer, url: redirectPath });
-    }, (error) => {
-        if (error) {
-            log.error(error);
-        }
-    });
+//    protocol.registerHttpProtocol('bzz', (request, callback) => {
+//        const redirectPath = `${Settings.swarmURL}/${request.url.replace('bzz:/', 'bzz://')}`;
+//        callback({ method: request.method, referrer: request.referrer, url: redirectPath });
+//    }, (error) => {
+//        if (error) {
+//            log.error(error);
+//        }
+//    });
 
     // check for update
     if (!Settings.inAutoTestMode) UpdateChecker.run();
@@ -313,19 +313,19 @@ onReady = () => {
         });
 
         // starting swarm
-        swarmNode.on('starting', () => {
-            Windows.broadcast('uiAction_swarmStatus', 'starting');
-        });
+//        swarmNode.on('starting', () => {
+//            Windows.broadcast('uiAction_swarmStatus', 'starting');
+//        });
 
         // swarm download progress
-        swarmNode.on('downloadProgress', (progress) => {
-            Windows.broadcast('uiAction_swarmStatus', 'downloadProgress', progress);
-        });
+//        swarmNode.on('downloadProgress', (progress) => {
+//            Windows.broadcast('uiAction_swarmStatus', 'downloadProgress', progress);
+//        });
 
         // started swarm
-        swarmNode.on('started', (isLocal) => {
-            Windows.broadcast('uiAction_swarmStatus', 'started', isLocal);
-        });
+//        swarmNode.on('started', (isLocal) => {
+//            Windows.broadcast('uiAction_swarmStatus', 'started', isLocal);
+//        });
 
 
         // capture sync results
@@ -381,7 +381,8 @@ onReady = () => {
             if (Settings.uiMode === 'wallet') {
                 return Promise.resolve();
             }
-            return swarmNode.init();
+//            return swarmNode.init();
+            return Promise.resolve();
         })
         .then(function sanityCheck() {
             if (!ethereumNode.isIpcConnected) {
