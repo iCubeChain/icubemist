@@ -20,8 +20,8 @@
                 {{#unless permissions.admin}}
                 <button class="accounts">
                     {{#each dappAccounts}}
-                        <span class="simptip-position-left simptip-movable" data-tooltip="{{name}}">
-                            {{> dapp_identicon identity=address class="dapp-tiny"}}
+                        <span class="simptip-position-left simptip-movable n-new-thumb" data-tooltip="{{name}}">
+                            {{> icube_identicon_account identity=address class="dapp-tiny"}}
                         </span>
                     {{else}}
                         <span class="connect-button">
@@ -33,5 +33,5 @@
                 {{/unless}}
             </div>
     </div>
-    {{/with}}    
+    {{/with}}
 </template>
